@@ -4,7 +4,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot/main.py
-    envVars:
+    envVars: .env .example 
       - key: API_ID
         value: your_api_id
       - key: API_HASH
